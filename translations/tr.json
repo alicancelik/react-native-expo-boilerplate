@@ -1,0 +1,11 @@
+{
+  "homeScreen": {
+        "language": "Dil",
+        "changeLanguage": "Dil Degis",
+        "english": "İngilizce",
+        "turkish": "Türkçe",
+        "welcome": "BoilerPlate'e Hosgeldiniz ",
+        "cancel": "İptal Et",
+        "whichDoYouLike": "Hangisini Tercih Edersiniz ?"
+  }
+}

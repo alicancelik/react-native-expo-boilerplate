@@ -1,0 +1,11 @@
+{
+  "homeScreen": {
+        "language": "Language",
+        "changeLanguage": "Change Language",
+        "welcome": "Welcome To BoilerPlate",
+        "english": "English",
+        "turkish": "Turkish",
+        "cancel": "Cancel",
+        "whichDoYouLike": "Which one do you like ?"
+  }
+}
