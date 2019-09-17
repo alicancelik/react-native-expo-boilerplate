@@ -1,4 +1,3 @@
-# react-native-expo-boilerplate
 # React Native Boilerplate
 
 ## Features
