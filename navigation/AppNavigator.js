@@ -1,11 +1,43 @@
-import { createAppContainer, createSwitchNavigator } from 'react-navigation';
+import {
+  createAppContainer, createSwitchNavigator, createStackNavigator, NavigationActions
+} from 'react-navigation';
+import React, { Component } from 'react';
 
 import MainTabNavigator from './MainTabNavigator';
 
-export default createAppContainer(
+class AppNavigator extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+    };
+  }
+
+ static _navigation = null;
+
+ static _setNavigation(navigation) { //eslint-disable-line
+   AppNavigator._navigation = navigation;
+ }
+
+ static navigate(path) {
+   if (AppNavigator._navigation !== null) {
+     AppNavigator._navigation.dispatch(NavigationActions.navigate({ routeName: path }));
+   }
+ }
+
+ render() {
+   return (
+     <AppContainer ref={(nav) => {
+       AppNavigator._setNavigation(nav);
+     }}
+     />
+   );
+ }
+}
+
+export default AppNavigator;
+
+const AppContainer = createAppContainer(
   createSwitchNavigator({
-    // You could add another route here for authentication.
-    // Read more at https://reactnavigation.org/docs/en/auth-flow.html
     Main: MainTabNavigator,
   })
 );

@@ -14,7 +14,11 @@ module.exports = {
     'no-return-assign': 'off',
     'react/destructuring-assignment': 'off',
     'camelcase': 'off',
-    'prefer-destructuring': 'off'
+    'prefer-destructuring': 'off',
+    'no-throw-literal': 'off',
+    'no-underscore-dangle': 'off',
+    'import/no-cycle': 'off',
+    'react/sort-comp': 'off',
   },
   'globals': {
     "fetch": false
